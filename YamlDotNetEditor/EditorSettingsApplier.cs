@@ -33,6 +33,7 @@ namespace YamlDotNetEditor
 		public void TextViewCreated(IWpfTextView textView)
 		{
 			textView.Options.SetOptionValue<bool>(DefaultOptions.ConvertTabsToSpacesOptionId, true);
+			textView.Options.SetOptionValue<int>(DefaultOptions.IndentSizeOptionId, 2);
 		}
 	}
 }
